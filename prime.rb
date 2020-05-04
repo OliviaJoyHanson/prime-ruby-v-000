@@ -4,5 +4,7 @@ def prime?(int)
     true
   elsif int > 1 && int != 2 && !(2...(int-1)).to_a.any?{|num| int % num == 0}
     true
+  else
+    false
   end
 end
